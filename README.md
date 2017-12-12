@@ -19,7 +19,7 @@ Add your target device name to the TARGET_DEVICE_NAME list in the MainActivity. 
 
 
 
-##How to use it
+## How to use it
 
 ### Discovery
 
