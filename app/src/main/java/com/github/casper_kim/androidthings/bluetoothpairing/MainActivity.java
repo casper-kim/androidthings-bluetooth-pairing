@@ -47,6 +47,15 @@ public class MainActivity extends Activity {
             return;
         }
 
+        if(!mBluetoothAdapter.isEnabled()){
+            Log.d(TAG, "BT enable.");
+            mBluetoothAdapter.enable();
+        }
+        else{
+            Log.d(TAG, "BT already enabled.");
+        }
+
+
         checkBluetoothProfile();
     }
 
