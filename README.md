@@ -26,11 +26,11 @@ Add your target device name to the TARGET_DEVICE_NAME list in the MainActivity. 
 Press A key or send key event with adb command to start BT discovering and find target devices.
 
 ```
-casper-pc$ adb shell input keyevent KEYEVENT_A
+casper-pc$ adb shell input keyevent KEYCODE_A
 ```
 
 ```
-rpi3$ input keyevent KEYEVENT_A
+rpi3$ input keyevent KEYCODE_A
 ```
 
 
@@ -50,7 +50,7 @@ bluetoothpairing D/bt-pairing-test: target device found.. #in TARGET_DEVICE_NAME
 
 ### Stop Discovery
 
-Press B key or send KEYEVENT_B event with adb command to stop BT discovering.
+Press B key or send KEYCODE_B event with adb command to stop BT discovering.
 
 ```
 bluetoothpairing D/bt-pairing-test: stopDiscovery
@@ -61,7 +61,7 @@ bluetoothpairing D/bt-pairing-test: cancel BT Discovery
 
 ### Create Bond
 
-Press C key or send KEYEVENT_C event with adb command to createBond with found devices.
+Press C key or send KEYCODE_C event with adb command to createBond with found devices.
 
 ```
 bluetoothpairing I/BluetoothDevice: createBondDiscoveredDevices
@@ -76,7 +76,7 @@ bluetoothpairing D/bt-pairing-test: ACTION_BOND_STATE_CHANGED: state:10, previou
 
 ### Pairing
 
-Press D key or send KEYEVENT_D event with adb command to pair the bonded/target devices.
+Press D key or send KEYCODE_D event with adb command to pair the bonded/target devices.
 
 ```
 bluetoothpairing D/bt-pairing-test: pairBondedDevices
@@ -92,7 +92,7 @@ bluetoothpairing D/bt-pairing-test: connect result:true
 
 ## Known Issues
 
-Press E key or send KEYEVENT_E to unpair the target devices but it is connected again automatically..
+Press E key or send KEYCODE_E to unpair the target devices but it is connected again automatically..
 
 ```
 bluetoothpairing D/bt-pairing-test: unpairBondedDevices
